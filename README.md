@@ -1,12 +1,13 @@
-<h2 align="center"> Portfolio Dhouchanin L. </h2>
+<h2 align="center"> Web demo for "Tiny House Project"</h2>
 
 
 
 ## Author
-Dhouchdhanin L.
+Dhouchdhanin L. and ทีมเติม ปตท. ตั้งแต่เกิด
 
 ## Description
-<a href="https://pangchewe.github.io/Portfolio_Dhouchl" target="_blank"> Portable </a> is a personal portfolio website to showcase some of my work. <!-- Built using HTML5, CSS3 and Vanilla Javascript, and hosted with GitHub Pages. -->
+<a href="https://pangchewe.github.io/Portable" target="_blank"> THANIIE </a> is a website to showcase Tiny House Project. <!-- Built with love -->
 
 ## License
-Lines is licensed under the **MIT License**.
+THANIIE is licensed under the **MIT License**.
+
