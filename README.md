@@ -6,7 +6,7 @@
 Dhouchdhanin L. and ทีมเติม ปตท. ตั้งแต่เกิด
 
 ## Description
-<a href="https://pangchewe.github.io/Portable" target="_blank"> THANIIE </a> is a website to showcase Tiny House Project. <!-- Built with love -->
+<a href="https://pangchewe.github.io/tiny-house/" target="_blank"> THANIIE </a> is a website to showcase Tiny House Project. <!-- Built with love -->
 
 ## License
 THANIIE is licensed under the **MIT License**.
