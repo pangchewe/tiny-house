@@ -3,7 +3,7 @@
 
 
 ## Author
-Dhouchdhanin L. and ทีมเติม ปตท. ตั้งแต่เกิด
+pangchewe
 
 ## Description
 <a href="https://pangchewe.github.io/tiny-house/" target="_blank"> THANIIE </a> is a website to showcase Tiny House Project. <!-- Built with love -->
