@@ -11,3 +11,6 @@ pangchewe
 ## License
 THANIIE is licensed under the **MIT License**.
 
+=IFERROR(VLOOKUP(EMS_Database!H2, 'usd map'!C:A, 1, FALSE), "")
+
+
