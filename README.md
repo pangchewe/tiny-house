@@ -43,3 +43,4 @@ THANIIE is licensed under the **MIT License**.
 
 ![image](https://github.com/pangchewe/tiny-house/assets/34416808/9943bd97-acbb-4261-ae9c-2718daedaad0)
 
+=-(SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AY$3,LLF_Accounting_Entries!AH:AH,"AGENCY")-+SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AX$3,LLF_Accounting_Entries!AH:AH,"AGENCY"))
