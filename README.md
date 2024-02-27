@@ -61,3 +61,5 @@ THANIIE is licensed under the **MIT License**.
 =-(+SUMIFS('SASMA Database'!$V:$V,'SASMA Database'!$E:$E,$C19,'SASMA Database'!$C:$C,"GM000",'SASMA Database'!$A:$A,YEAR(AY$3),'SASMA Database'!$B:$B,MONTH(AY$3),'SASMA Database'!$G:$G,"5100040000"))
 +(+SUMIFS('SASMA Database'!$V:$V,'SASMA Database'!$E:$E,$C19,'SASMA Database'!$C:$C,"GM000",'SASMA Database'!$A:$A,YEAR(AX$3),'SASMA Database'!$B:$B,MONTH(AX$3),'SASMA Database'!$G:$G,"5100040000"))*0
 
+=-(+SUMIFS('SASMA Database'!$V:$V,'SASMA Database'!$E:$E,$C19,'SASMA Database'!$C:$C,"GM000",'SASMA Database'!$A:$A,YEAR(AY$3),'SASMA Database'!$B:$B,MONTH(AY$3),'SASMA Database'!$G:$G,"5100040000",'SASMA Database'!X:X,"AGENCY"))
++(+SUMIFS('SASMA Database'!$V:$V,'SASMA Database'!$E:$E,$C19,'SASMA Database'!$C:$C,"GM000",'SASMA Database'!$A:$A,YEAR(AX$3),'SASMA Database'!$B:$B,MONTH(AX$3),'SASMA Database'!$G:$G,"5100040000",'SASMA Database'!X:X,"AGENCY"))*0
