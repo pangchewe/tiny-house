@@ -16,3 +16,6 @@ THANIIE is licensed under the **MIT License**.
 
 
 =(SUMIFS('I17 BI Database'!AB:AB,'I17 BI Database'!$F:$F,"Premium FY, Direct",'I17 BI Database'!$I:$I,"AP01/GM000",'I17 BI Database'!$AC:$AC,"AGENCY"))*$AK4
+
+
+Supplementary File Template_Jan2024_Enhancement_LLF_Pang
