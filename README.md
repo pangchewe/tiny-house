@@ -15,3 +15,6 @@ THANIIE is licensed under the **MIT License**.
 
 
 =SUMIFS('[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]ACF_Data'!$H:$H, '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]ACF_Data'!$C:$C, "UA0102", '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]ACF_Data'!$K:$K, "GM000", '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]ACF_Data'!$A:$A, MONTH(AY$3)&"/"&YEAR(AY$3), '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]ACF_Data'!Z:Z, "AGENCY")
+
+
+=+(SUMIFS('GCS DataBase'!$G:$G,'GCS DataBase'!$H:$H,$C11,'GCS DataBase'!$B:$B,"GM000",'GCS DataBase'!$E:$E,YEAR(D$3)&TEXT(MONTH(D$3),"00"),'GCS DataBase'!$C:$C,"AGENCY"))*$AK11
