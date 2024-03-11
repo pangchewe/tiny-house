@@ -1,0 +1,74 @@
+import streamlit as st
+import sys
+import ctypes
+import numpy as np
+import pandas as pd
+from datetime import datetime, date, timedelta
+import gc
+import openpyxl
+from scipy.stats import linregress
+from scipy.stats.mstats import gmean
+import os
+from Curve_Calibration_By_Thaniie import run_calibration
+
+# Function to save DataFrame to an Excel file and return the file path
+def save_to_excel(data_frame, output_path):
+    # Check if the output path ends with a valid Excel file extension
+    if not output_path.lower().endswith(('.xlsx', '.xls', '.xlsm')):
+        st.error('The output path must end with a valid Excel file extension (.xlsx, .xls, .xlsm).')
+        return None # Exit the function without attempting to save
+
+    # Ensure the output directory exists, create if it doesn't
+    output_folder = os.path.dirname(output_path)
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    # Attempt to save the DataFrame to the specified Excel file
+    try:
+        data_frame.to_excel(output_path, index=False)
+        return output_path
+    except Exception as e:
+        st.error(f"Failed to save Excel file: {e}")
+    return None
+
+# Main application
+st.title('RFR Creation')
+st.caption('Python-based GUI application to create RFR result by Thaniie')
+
+col1, col2 = st.columns([2, 2], gap="small")
+
+with col1:
+    st.subheader('Input Date', divider='red')
+    val_date = st.date_input('Provide valuation date (*month end date only)', date.today().replace(day=1) -  timedelta(days=1)).strftime('%Y%m%d')
+    #val_date_curr = st.date_input('Provide valuation date for current position (*month end date only)', dt.date.today().replace(day=1) - dt.timedelta(days=1)).strftime('%Y%m%d')
+    #val_date_prev = st.date_input('Provide valuation date for previous position (*month end date only)', dt.date.today().replace(day=1) - dt.timedelta(days=1)).strftime('%Y%m%d')
+    csv_encoding = st.text_input('Provide encoding type of .csv file for current position', 'cp874')
+
+with col2:
+    st.subheader('Input Excel File here', divider='red')
+    file_path = st.text_input("Enter the path of the Excel file", 'C:\Python_Intern\Asset_Movement_Excel\Asset_Movement_Jan2024_v11.xlsm')
+    output_path_user = st.text_input("Enter output file path", 'C:/Users/E135863/AIA Group Ltd/FSR Internship - General/02. Structural Risk/Asset Analysis of Movement App/Output')
+    test_pals_file_curr = st.file_uploader("Choose an Excel file for creating RFR", type=['xlsx', 'xls', 'xlsm'])
+
+df_pals_file_curr = None
+
+    
+if st.button('Run Calibration'):
+    if file_path and output_path_user:
+        try:
+            message = run_calibration(file_path, output_path_user, val_date )
+            st.success(f"✅ RFR curve calibration ran successfully.")
+            st.success(f"✅ Output File Location: {message}")
+            #output_path_result = run_calibration(file_path, output_path_user)
+            if os.path.exists(message):
+                df_pals_file_curr = pd.read_excel(message)
+                st.write(df_pals_file_curr)
+            else:
+                st.error('Calibration output file not found', icon="🚨")
+        except Exception as e:
+            st.error(f"🚨 An error occured during calibration: {e}")
+    else:
+        st.warning("🔥 Please provide both the input file path and the output path before running the calibration.")
+
+
+
