@@ -19,3 +19,6 @@ THANIIE is licensed under the **MIT License**.
 
 
 Supplementary File Template_Jan2024_Enhancement_LLF_Pang
+
+
+=SUMIFS(INDIRECT("'[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]I17 BI Database'!AB:AB"), INDIRECT("'[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]I17 BI Database'!$F:$F"), "Premium FY, Direct", INDIRECT("'[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]I17 BI Database'!$I:$I"), "AP01/GM000", INDIRECT("'[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]I17 BI Database'!$AC:$AC"), "AGENCY") * $AK4
