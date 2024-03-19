@@ -29,10 +29,12 @@ to
 so make this 
 =-(SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AX$3)-+SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AW$3))
 
+1.
+=-(SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AW$3)-+SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AV$3))
+2.
+=-(SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AV$3)-+SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AU$3))
 
-
-
-
-=-(SUMIFS('[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$AG:$AG, '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$C:$C, "6100000100", '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$K:$K, "GM000", '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$A:$A, '[MTD Results Summary]MTD Results Summary'!AX$3, '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!AH:AH, "AGENCY") - SUMIFS('[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$AG:$AG, '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$C:$C, "6100000100", '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$K:$K, "GM000", '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$A:$A, '[MTD Results Summary]MTD Results Summary'!AW$3, '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!AH:AH, "AGENCY"))
-
-
+3.=-(SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AU$3)-+SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AT$3))
+4.
+=-(SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AT$3)-+SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AS$3))
+5.=-(SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AS$3)-+SUMIFS(LLF_Accounting_Entries!$AG:$AG,LLF_Accounting_Entries!$C:$C,"6100000100",LLF_Accounting_Entries!$K:$K,"GM000",LLF_Accounting_Entries!$A:$A,'MTD Results Summary'!AR$3))
