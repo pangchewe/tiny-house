@@ -33,5 +33,6 @@ so make this
 
 
 
+=-(SUMIFS('[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$AG:$AG, '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$C:$C, "6100000100", '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$K:$K, "GM000", '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$A:$A, '[MTD Results Summary]MTD Results Summary'!AX$3, '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!AH:AH, "AGENCY") - SUMIFS('[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$AG:$AG, '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$C:$C, "6100000100", '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$K:$K, "GM000", '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!$A:$A, '[MTD Results Summary]MTD Results Summary'!AW$3, '[Supplementary File Template_Jan2024_Enhancement_LLF_Pang.xlsx]LLF_Accounting_Entries'!AH:AH, "AGENCY"))
 
 
